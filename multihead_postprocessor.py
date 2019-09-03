@@ -1,6 +1,8 @@
 # Ultimaker XXL prototype project --NOT FOR DISTRIBUTION--
 # Postprocessor version 2.0.0
+# Initial idea by Joris van Tubergen / www.rooiejoris.nl
 # Made by Samir den Haan, sdenhaan189@gmail.com
+# Based on the work of Elea 2017
 # TU Delft, Faculty IDE
 
 # Import libraries
