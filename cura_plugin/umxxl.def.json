@@ -1,0 +1,66 @@
+{
+    "version": 2,
+    "name": "UMXXL prototype",
+    "inherits": "fdmprinter",
+    "metadata": {
+        "visible": true,
+        "author": "fieldOfView",
+        "manufacturer": "UMXXL team",
+        "category": "UMXXL",
+        "file_formats": "text/x-gcode"
+    },
+
+    "settings": {
+        "umxxl_settings": {
+            "label": "UMXXL",
+            "type": "category",
+            "description": "UMXXL-specific settings",
+            "icon": "category_machine",
+            "children":
+            {
+                "umxxl_overlap":
+                {
+                    "label": "Overlap zone",
+                    "description": "The width of the overlap between the printers",
+                    "type": "float",
+                    "unit": "mm",
+                    "default_value": 10,
+                    "minimum_value": "0",
+                    "maximum_value": "100",
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": false
+                },
+                "umxxl_debug":
+                {
+                    "label": "Do not execute the chopping",
+                    "description": "Do not execute the chopping/postprocessing when saving",
+                    "type": "bool",
+                    "default_value": false,
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": false
+                }
+            }
+        }
+    },
+
+    "overrides": {
+        "machine_name": {
+            "default_value": "UMXXL"
+        },
+        "machine_nozzle_size" : {
+            "default_value": 0.7
+        },
+        "machine_head_with_fans_polygon": {
+            "default_value": [[0,0],[0,0],[0,0],[0,0]]
+        },
+        "machine_width": {
+            "default_value": 740
+        },
+        "machine_height": {
+            "default_value": 800
+        },
+        "machine_depth": {
+            "default_value": 220
+        }
+    }
+}
